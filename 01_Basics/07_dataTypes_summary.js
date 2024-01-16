@@ -29,3 +29,28 @@ const myFunction = function () {
 }
 
 console.log(typeof bigNumber)
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- Memories -------------------------------- */
+//Stack(primitive) and Heap(non primitive) memories
+
+let nameStack = "A"
+
+let anotherStackName = nameStack
+
+anotherStackName = "New A"
+console.log(nameStack);
+console.log(anotherStackName);
+
+//heap
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "abc@gmail.com"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hello@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
